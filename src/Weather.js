@@ -57,11 +57,7 @@ export default function Weather() {
         </div>
         <div className="col-6">
           <div className="weather-forecast" id="forecast"></div>
-          <img
-            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
-            alt=""
-            width=""
-          />
+          <img src="" alt="" width="" />
           <span className="weather-forecast-temperatures">
             <span className="weather-forecast-temperature-max">°</span>
             <span className="weather-forecast-temperature-min">°</span>
@@ -78,7 +74,7 @@ export default function Weather() {
               Open-Source Code
             </a>{" "}
             and hosted on
-            <a href="">Netlify</a>
+            <a href="github.com/JJpink31/weather-react-app.">Netlify</a>
           </span>
         </div>
       </div>
