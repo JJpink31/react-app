@@ -74,11 +74,11 @@ export default function Weather() {
         <div className="Footer">
           <span className="coding-link">
             Coded by Jordanka Josifovic
-            <a href="https://github.com/JJpink31/weather-app">
+            <a href="https://github.com/JJpink31/weather-react-app.git">
               Open-Source Code
             </a>{" "}
             and hosted on
-            <a href="https://polite-melba-f575c3.netlify.app/">Netlify</a>
+            <a href="">Netlify</a>
           </span>
         </div>
       </div>
