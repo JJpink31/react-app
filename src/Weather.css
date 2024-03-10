@@ -18,6 +18,9 @@
   margin-top: 35px;
   position: relative;
 }
+.main-city {
+  font-size: 40px;
+}
 
 .emoji {
   display: block;

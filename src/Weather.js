@@ -25,12 +25,12 @@ export default function Weather() {
               type="submit"
               value="Search"
               button
-              className="btn btn-outline-light"
+              className="btn btn-outline-light ms-1"
             />
           </form>
         </div>
       </div>
-      <button>Current Location</button>
+      <button className="btn btn-outline-light mt-2">Current Location</button>
       <div className="grid">
         <div className="row">
           <div className="col-3">
@@ -69,7 +69,7 @@ export default function Weather() {
         </div>
         <div className="Footer">
           <span className="coding-link">
-            Coded by Jordanka Josifovic
+            Coded by Jordanka Josifovic {""}
             <a href="https://github.com/JJpink31/weather-react-app.git">
               Open-Source Code
             </a>{" "}
