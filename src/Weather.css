@@ -21,7 +21,10 @@
 .main-city {
   font-size: 40px;
 }
-
+.main-city-description ul {
+  padding: 0;
+  font-size: 25px;
+}
 .emoji {
   display: block;
   font-size: 40px;

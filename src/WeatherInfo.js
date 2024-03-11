@@ -17,14 +17,28 @@ export default function WeatherInfo(props) {
                 </span>
               </div>
 
-              <div>
-                <FormattedDate date={props.data.date} />
+              <div className="main-city-description">
+                <ul>
+                  <li>
+                    <FormattedDate date={props.data.date} />
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Humidity:{""}
+                    {Math.round(props.data.humidity)}
+                  </li>
+                  <li>
+                    Wind: {""}
+                    {Math.round(props.data.wind)}
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div className="main-emoji col-3">
-            <img src={props.data.icon} alt={props.data.description} id="icon" />
+            <img src={props.data.icon} alt={props.data.description} />
           </div>
         </div>
       </div>
