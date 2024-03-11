@@ -18,7 +18,7 @@
   margin-top: 35px;
   position: relative;
 }
-.main-city {
+main-city {
   font-size: 40px;
 }
 .main-city-description ul {
@@ -32,7 +32,7 @@
 
 .temperatures {
   display: block;
-  font-size: 20px;
+  font-size: 300px;
   margin-right: -20px;
 }
 
