@@ -8,10 +8,9 @@ export default function WeatherInfo(props) {
       <button className="btn btn-outline-light mt-2">Current Location</button>
       <div className="grid">
         <div className="row">
-          <div className="col-3">
-            <div className="main-city">
-              <div>{props.data.city}</div>
-              <div className="d-flex weather-temp"></div>
+          <div className="col-5">
+            <div>
+              <div className="main-city">{props.data.city}</div>
               <WeatherTemperture fahrenheit={props.data.temperature} />
 
               <div className="main-city-description">
@@ -34,8 +33,12 @@ export default function WeatherInfo(props) {
             </div>
           </div>
 
-          <div className="main-emoji col-3">
-            <img src={props.data.icon} alt={props.data.description} />
+          <div className="col-3">
+            <img
+              src={props.data.icon}
+              alt={props.data.description}
+              className="main-emoji"
+            />
           </div>
         </div>
       </div>
