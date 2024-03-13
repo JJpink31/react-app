@@ -8,8 +8,8 @@ export default function WeatherInfo(props) {
       <button className="btn btn-outline-light mt-2">Current Location</button>
       <div className="grid">
         <div className="row">
-          <div className="col-5">
-            <div>
+          <div className="col-3">
+            <div className="row">
               <div className="main-city">{props.data.city}</div>
               <WeatherTemperture fahrenheit={props.data.temperature} />
 

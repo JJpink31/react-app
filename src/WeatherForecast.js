@@ -9,21 +9,21 @@ export default function WeatherForecast(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props.city]);
+  }, [props.forecast]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
   function load() {
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${props.city}&key=f8833caao3caf01e1ffbc8t348acfb03&units=imperial`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${props.forecast.city}&key=f8833caao3caf01e1ffbc8t348acfb03&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   if (loaded) {
     return (
-      <div className="WeatherForecast">
-        <div className="row">
+      <div className="col-6">
+        <div className="WeatherForecast">
           {forecast.map(function (dailyForecast, index) {
             if (index < 5) {
               return (

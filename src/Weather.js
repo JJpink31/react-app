@@ -60,12 +60,9 @@ export default function Weather(props) {
             </form>
           </div>
           <WeatherInfo data={weatherData} />
+          <WeatherForecast forecast={weatherData} />
         </div>
-        <WeatherForecast forecast={weatherData} />
-        <div className="WeatherForecast" id="forecast"></div>
-        <div>
-          <div></div>
-        </div>
+
         <div className="Footer">
           <span className="coding-link">
             Coded by Jordanka Josifovic {""}
