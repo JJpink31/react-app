@@ -26,10 +26,6 @@
   padding: 0;
   font-size: 25px;
 }
-.emoji {
-  display: block;
-  font-size: 40px;
-}
 
 .temperatures {
   display: block;
@@ -87,4 +83,8 @@ button {
   display: block;
   position: relative;
   font-size: 20px;
+}
+.emoji {
+  display: block;
+  font-size: 40px;
 }
