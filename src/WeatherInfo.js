@@ -41,7 +41,7 @@ export default function WeatherInfo(props) {
               className="main-emoji"
             />
           </div>
-          <WeatherForecast data={weatherforecast} />
+          <WeatherForecast forecastdata={city} />
         </div>
       </div>
     </div>
