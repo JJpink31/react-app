@@ -41,8 +41,8 @@ export default function WeatherInfo(props) {
               className="main-emoji"
             />
           </div>
-          <WeatherForecast forecastdata={props.coordinates} />
         </div>
+        <WeatherForecast forecastdata={props.coordinates} />
       </div>
     </div>
   );
