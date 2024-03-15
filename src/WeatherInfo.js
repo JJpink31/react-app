@@ -1,7 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperture from "./WeatherTemperature";
-import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -41,7 +40,6 @@ export default function WeatherInfo(props) {
               className="main-emoji"
             />
           </div>
-          <WeatherForecast forecastdata={props.coordinate} />
         </div>
       </div>
     </div>
