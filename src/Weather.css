@@ -76,7 +76,6 @@ button {
 
 .weather-forecast-temperature-min {
   display: block;
-  margin-top: -30px;
   text-align: center;
 }
 .weatherForecast {
@@ -87,4 +86,10 @@ button {
 .emoji {
   display: block;
   font-size: 40px;
+}
+
+.WeatherForecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
