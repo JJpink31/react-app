@@ -7,6 +7,9 @@
   border: 5px solid rgb(234, 227, 191);
   border-radius: 10px;
 }
+h1 {
+  margin-top: 10px;
+}
 
 .col-3 {
   padding-left: 10px;
@@ -69,15 +72,24 @@ button {
   max-width: 700px;
   text-align: center;
   position: relative;
+  font-size: 12px;
 }
 
-.col-6 {
+.col-12 {
   text-align: center;
+  margin-top: -555px;
 }
-
+.weather-forecast-temperatures {
+  font-size: 20px;
+}
 .weather-forecast-temperature-min {
   display: block;
   text-align: center;
+}
+.weather-forecast-date {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
 }
 .emoji {
   display: block;
@@ -86,6 +98,23 @@ button {
 
 .WeatherForecast {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  text-align: center;
+  padding: 0;
+  margin-left: 375px;
+}
+@media (max-width: 600px) {
+  .col-12 {
+    margin-top: 0;
+  }
+  .WeatherForecast {
+    margin-left: 25px;
+  }
+  .WeatherInfo {
+    grid-column: span;
+  }
+  .main-emoji {
+    padding-left: 80px;
+  }
 }

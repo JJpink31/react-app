@@ -39,44 +39,41 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="container-fluid">
-        <div className="grid">
-          <h1 className="">Check Your Weather</h1>
-
+        <div className="grid grid justify-content ">
+          <h1 className="">Check The Weather</h1>
           <div className="row">
-            <div className="col">
-              <form id="showCity" onSubmit={handdleSubmit}>
-                <input
-                  type="text "
-                  placeholder="Enter City"
-                  className="border border-light border border-5"
-                  id="city-input"
-                  autoFocus="on"
-                  onChange={handleCityChange}
-                />
-                <input
-                  type="submit"
-                  value="Search"
-                  button
-                  className="btn btn-outline-light ms-1"
-                />
-              </form>
-            </div>
-            <WeatherInfo data={weatherData} />
-            <div className="row">
-              <WeatherForecast coordinates={weatherData.coordinates} />
-            </div>
+            <form id="showCity" onSubmit={handdleSubmit}>
+              <input
+                type="text "
+                placeholder="Enter City"
+                className="border border-light border border-5"
+                id="city-input"
+                autoFocus="on"
+                onChange={handleCityChange}
+              />
+              <input
+                type="submit"
+                value="Search"
+                button
+                className="btn btn-outline-light ms-1"
+              />
+            </form>
           </div>
+          <WeatherInfo data={weatherData} />
+        </div>
+        <div className="col-12">
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
 
-          <div className="Footer">
-            <span className="coding-link">
-              Coded by Jordanka Josifovic {""}
-              <a href="https://github.com/JJpink31/weather-react-app.git">
-                Open-Source Code
-              </a>{" "}
-              and hosted on
-              <a href="github.com/JJpink31/weather-react-app.">Netlify</a>
-            </span>
-          </div>
+        <div className="Footer mt-3">
+          <span className="coding-link">
+            Coded by Jordanka Josifovic {""}
+            <a href="https://github.com/JJpink31/weather-react-app.git">
+              Open-Source Code
+            </a>{" "}
+            and hosted on
+            <a href="github.com/JJpink31/weather-react-app.">Netlify</a>
+          </span>
         </div>
       </div>
     );

@@ -27,17 +27,23 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <span className="WeatherForecast">
+    <div className="WeatherForecast">
       <img
         src={props.data.condition.icon_url}
         alt={props.data.description}
         className="emoji"
       />
-      <span className="weather-forecast-temperatures">
-        <span className="weather-forecast-temperature-max">{maxTemp()}</span>
-        <span className="weather-forecast-temperature-min">{minTemp()}</span>
-        <span className="weather-forecast-date">{day()}</span>
-      </span>
-    </span>
+      <div className="col-2 p-2">
+        <div className="weather-forecast-date text-decoration-underline">
+          {day()}
+        </div>
+        <div className="weather-forecast-temperatures p-1">
+          <span className="weather-forecast-temperature-max ">{maxTemp()}</span>
+          <span className="weather-forecast-temperature-min mb-4">
+            {minTemp()}
+          </span>
+        </div>
+      </div>
+    </div>
   );
 }
