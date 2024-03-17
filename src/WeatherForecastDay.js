@@ -27,13 +27,13 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div className="WeatherForecast">
+    <div className="WeatherForecast grid-gap-2">
       <img
         src={props.data.condition.icon_url}
         alt={props.data.description}
-        className="emoji"
+        className="emoji col-4"
       />
-      <div className="col-2 p-2">
+      <div className="col-6">
         <div className="weather-forecast-date text-decoration-underline">
           {day()}
         </div>
