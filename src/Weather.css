@@ -77,7 +77,7 @@ button {
 
 .col-12 {
   text-align: center;
-  margin-top: -400px;
+  margin-top: -340px;
 }
 .weather-forecast-temperatures {
   font-size: 20px;
@@ -104,6 +104,7 @@ button {
   padding: 0;
   margin-left: 375px;
 }
+
 @media (max-width: 600px) {
   .col-12 {
     margin-top: 0;
