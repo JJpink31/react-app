@@ -110,7 +110,7 @@ button {
     margin-top: 0;
   }
   .WeatherForecast {
-    margin-left: 25px;
+    margin-left: 60px;
   }
   .WeatherInfo {
     grid-column: span;
