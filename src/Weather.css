@@ -21,6 +21,7 @@ h1 {
   padding-left: 45px;
   margin-top: 50px;
   position: relative;
+  transform: scale(1.8);
 }
 .main-city {
   margin-top: 20px;
@@ -105,9 +106,6 @@ button {
 }
 
 @media (max-width: 600px) {
-  .main-emoji {
-    padding-left: 80px;
-  }
   .weather-forecast-temperatures {
     font-size: 20px;
   }
