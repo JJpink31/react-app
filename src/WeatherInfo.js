@@ -6,7 +6,7 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
-        <div className="col-3">
+        <div className="col-4">
           <div className="row">
             <div className="main-city">{props.data.city}</div>
             <WeatherTemperture fahrenheit={props.data.temperature} />
@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
 
-        <div className="col-3">
+        <div className="col-5">
           <img
             src={props.data.icon}
             alt={props.data.description}

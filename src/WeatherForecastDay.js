@@ -27,7 +27,7 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div className="WeatherForecast grid-gap-2">
+    <div className="WeatherForecast col-10 grid-gap-2">
       <img
         src={props.data.condition.icon_url}
         alt={props.data.description}

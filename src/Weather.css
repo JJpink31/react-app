@@ -17,7 +17,6 @@ h1 {
 
 .main-emoji {
   display: block;
-  font-size: 100px;
   padding-top: 40px;
   padding-left: 45px;
   margin-top: 50px;
@@ -75,12 +74,8 @@ button {
   font-size: 12px;
 }
 
-.col-12 {
-  text-align: center;
-  margin-top: -350px;
-}
 .weather-forecast-temperatures {
-  font-size: 20px;
+  font-size: 25px;
 }
 .weather-forecast-temperature-min {
   display: block;
@@ -88,7 +83,7 @@ button {
 }
 .weather-forecast-date {
   display: block;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
 }
 .emoji {
@@ -101,26 +96,22 @@ button {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  padding-top: 10px;
-  margin-left: 375px;
+  padding: 10px;
   background: rgba(238, 238, 238, 0.201);
   border: 3px solid rgb(255, 255, 255);
   border-radius: 20px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
-  .col-12 {
-    margin-top: 0;
-  }
-  .WeatherForecast {
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .WeatherInfo {
-    grid-column: span;
-  }
   .main-emoji {
     padding-left: 80px;
+  }
+  .weather-forecast-temperatures {
+    font-size: 20px;
+  }
+  .weather-forecast-date {
+    font-size: 25px;
   }
 }
